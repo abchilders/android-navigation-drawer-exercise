@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         nvDrawer.getMenu().getItem(0).setChecked(true);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.flContent, new FamilyGuyFragment()).commit();
-        setTitle(R.string.family_guy); 
+        setTitle(R.string.family_guy);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {

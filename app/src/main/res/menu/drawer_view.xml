@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_family_guy"
+            android:icon="@drawable/ic_family_guy"
+            android:title="@string/family_guy" />
+        <item
+            android:id="@+id/nav_futurama"
+            android:icon="@drawable/ic_futurama"
+            android:title="@string/futurama" />
+        <item
+            android:id="@+id/nav_simpsons"
+            android:icon="@drawable/ic_simpsons"
+            android:title="@string/simpsons" />
+        <item
+            android:id="@+id/nav_south_park"
+            android:icon="@drawable/ic_south_park"
+            android:title="@string/south_park" />
+    </group>
+</menu>

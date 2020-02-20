@@ -57,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
         nvDrawer = findViewById(R.id.nvView);
         setupDrawerContent(nvDrawer);
 
+        // manually display the first fragment by default on initial load
+        nvDrawer.getMenu().getItem(0).setChecked(true);
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flContent, new FamilyGuyFragment()).commit();
+        setTitle(R.string.family_guy); 
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
